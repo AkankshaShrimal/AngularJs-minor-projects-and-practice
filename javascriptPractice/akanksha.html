@@ -1,0 +1,63 @@
+<html>
+
+<head>
+    <script src="app.js"></script>
+
+
+</head>
+
+<body>
+    DNA1 : <input id="dna1" type="text" name="dna1"></input>
+    DNA2 : <input id="dna2" type="text" name="dna2"></input>
+    <button onclick="compare();">find_difference</button>
+    <br>
+
+    <br>
+    <br>
+
+    <button onclick="repeat();">TO_REPEAT_PARA</button>
+    <p id="para" style=c olor:red;> hellow guys my name is akanksha </p>
+    <p id="demo" style=c olor:yellow;></p>
+
+    <script src="app2.js"></script>
+    <br> acronym_for: <input id="acr" type="text"></input>
+    <button onclick="get();">get</button>
+    <script src="app3.js"></script>
+
+    <br>
+    <br>
+    <br> panagram_or_not :<input id="pan" type="text"></input>
+    <button onclick="check();">check</button>
+    <script src="app4.js"></script>
+
+    <br>
+    <br>
+    <br> enter_the_word_isogram_or_not : <input id="iso" type="text"></input>
+    <button onclick="find();">find_isogram</button>
+    <script src="app5.js"></script>
+
+
+    <br>
+    <br>
+    <div><b> DISPLAYING A CLOCK BELOW</b></div>
+    <script src="app6.js"></script>
+    <div>
+        <p id="timeDisplay"></p>
+    </div>
+
+    </br>
+    <div><b> DISPLAYING A PARA ON EVERY BUTTON CLICK</b></div>
+    <input type="button" onClick="addParagraph()" value="click Me to ADD">
+    <div id="demo2">
+    </div>
+
+    <script>
+        function addParagraph() {
+            document.getElementById("demo2").innerHTML += "<p>hello</p>";
+        }
+    </script>
+
+
+</body>
+
+</html>
