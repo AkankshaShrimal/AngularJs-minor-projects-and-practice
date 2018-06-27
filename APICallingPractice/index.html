@@ -1,0 +1,54 @@
+<html ng-app="restapi">
+    <head>
+        <script src="angular.js"></script>
+        <script src="app.js"></script>
+    </head>
+    <body>
+    
+    <div ng-controller="personCtrl as person">
+             
+                <div>        
+                        <img style="display: block; margin: 0 auto;" ng-src= {{person.randomUser.picture.large}}>
+                        <h1 style="text-align: center"> {{person.randomUser.name.title}}
+                                                        {{person.randomUser.name.first}}
+                                                         {{person.randomUser.name.last}}</h1>
+                </div>
+
+                <div>
+                    <input type=text ng-model="person.hero">
+                    <button ng-click="person.gettingHero();">search</button>
+                    <div ng-repeat = "superHero in person.marvel">
+                     <br>  {{superHero.name}}
+                     <img ng-src={{superHero.thumbnail.path}}.{{superHero.thumbnail.extension}}>
+                     <br>
+                    </div>
+
+
+                </div>
+
+
+
+
+
+
+       
+       
+    </div>    <!--<div>
+                    <input type=text ng-model="person.hero">
+                    <button ng-click="person.gettingHero();">search</button>
+                    <div ng-repeat = "superHero in person.marvel">
+                     <br>  {{superHero.name}}
+                     <img ng-src={{superHero.thumbnail.path}}.{{superHero.thumbnail.extension}}>    <!--<div>
+                    <input type=text ng-model="person.hero">
+                    <button ng-click="person.gettingHero();">search</button>
+                    <div ng-repeat = "superHero in person.marvel">
+                     <br>  {{superHero.name}}
+                     <img ng-src={{superHero.thumbnail.path}}.{{superHero.thumbnail.extension}}>
+                     <br>
+                    </div>
+
+                     <br>
+                    </div>
+
+    </body>
+</html>
