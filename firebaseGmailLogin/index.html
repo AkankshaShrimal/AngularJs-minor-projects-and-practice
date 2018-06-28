@@ -1,0 +1,31 @@
+<html>
+    <head>
+            <script src="bower_components/angular/angular.js"></script>
+        <script src="app.js"></script>
+       
+        <script src="bower_components/firebase/firebase.js"></script>
+        <script src="bower_components/angularfire/dist/angularfire.js"></script>
+        <script>
+            // Initialize Firebase
+                 var config = {
+                 apiKey: "AIzaSyAPWtZeEv1jeptVfKFJFcOL89367zdDGSA",
+            authDomain: "todolist-fe86a.firebaseapp.com",
+            databaseURL: "https://todolist-fe86a.firebaseio.com",
+            projectId: "todolist-fe86a",
+            storageBucket: "todolist-fe86a.appspot.com",
+            messagingSenderId: "750155558168"
+            };
+  firebase.initializeApp(config);
+</script>
+        
+       
+     </head>
+     <body ng-app ="login" >
+         <div ng-controller="firstCtrl as first">
+
+             <img  ng-src={{first.img}}>
+         </div>
+
+         
+     </body>
+    <html>
