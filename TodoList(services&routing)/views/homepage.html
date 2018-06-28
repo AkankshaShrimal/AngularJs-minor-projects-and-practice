@@ -1,0 +1,15 @@
+<div ng-controller="firstCtrl as first">
+
+<h1 style="text-align: center;color:white" class="animated infinite pulse"> HOME PAGE</h1>
+
+<input type="text" class="form-control" ng-model="list.name">
+<button class="btn btn-info" ng-click="first.addname(list.name)">DONE</button> 
+<br>
+<br>
+
+  <a ng-repeat="elem in first.lists" href="#!/profile/{{elem}}">GO TO {{elem}}</a>
+  
+  
+
+
+</div>

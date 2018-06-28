@@ -1,0 +1,71 @@
+<h4>  <a href="#!/">GO TO HOME PAGE</a></h4>
+ 
+ 
+ <div ng-controller="todoCtrl as todo">
+            <br>
+            <br>
+            <b>
+            <h1  id="heading" style ="text-align: center; text-shadow:0pt;font-size:400%;text-shadow: 3px 3px red; color:whitesmoke" class=" animated infinite rubberBand"> TO DO LIST
+            </h1>
+            </b>
+            <br>
+            <br>
+
+            
+            <div class="row">
+                <div class=" col-xs-6">
+                   <b> <input  type="text" class="form-control" ng-model="todo.task" ng-keypress="$event.keyCode== 13 && todo.add(todo.task)" ></b>
+                </div>
+                <div class=" col-xs-6">
+                    <div class="row">
+                        <b>
+                        <div class=" col-xs-6">
+                             <button  id ="fabButton" class="btn btn-primary btn-block animated bounce" ng-click="todo.add(todo.task)">ADD IT</button>
+                        </div>
+                        <div class="col-xs-6">
+                            <button  id ="fabButton" class="btn btn-info btn-block animated bounce" ng-click="todo.edit(todo.task)">COMPLETED EDITING</button>
+                        </div>
+                        </b>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="row">
+                <b>
+                <div class="col-xs-1"><input type="text"class="form-control animated infinite pulse" value="TOTAL :{{todo.list.length}}">
+                </b>
+                 </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="row">
+                    <ul class="list-group">
+                        <b>
+                            <li  style ="color:white" class="list-group-item" ng-class= {"list-group-item-default":!task.status,"list-group-item-success":task.status} ng-repeat = "task in todo.list">
+                                 <div class="col-xs-3">
+                                   <button class="btn btn-primary" ng-click="todo.shiftUp($index)"><span class="glyphicon glyphicon-arrow-up"></span></button> 
+                                   <button class="btn btn-primary" ng-click="todo.shiftDown($index)"><span class="glyphicon glyphicon-arrow-down"></span></button> 
+                                   {{task.name}}
+                                  </div>
+                                 
+                                 <div class="col-xs-3"></div>
+                                <button class="btn btn-danger btn-xs " ng-click="todo.delete($index)"> <span class="glyphicon glyphicon-remove"></span>DELETE</button>
+
+                                <button class="btn btn-xs" ng-class={"btn-success":!task.status,"btn-warning":task.status}  ng-click="todo.done($index)"> {{task.status?'UNDO':'DONE'}}</button>
+
+                                <button class="btn btn-xs btn-info"   ng-click="todo.changeTask($index)"> EDIT</button>
+                            
+                         </li>
+                        </b>
+                    
+                    </ul>
+                    </div>
+                </div>
+            </div>
+                
+
+        </div>
