@@ -33,9 +33,9 @@
     - whatsapp like template.
     - polling app template.
 
-
+<p>
 <img src='https://user-images.githubusercontent.com/24764528/42089039-53fa40a2-7bb9-11e8-999d-68b1b80f52e9.png' width='100px'>
 <img src='https://user-images.githubusercontent.com/24764528/42089052-608ff820-7bb9-11e8-8551-b547816bf49f.png' width='100px'>
-
+</p>
 <p align="center">
 <img src='https://user-images.githubusercontent.com/24764528/42089031-4f689354-7bb9-11e8-8b9e-100790383091.png' width='800px'></p>
