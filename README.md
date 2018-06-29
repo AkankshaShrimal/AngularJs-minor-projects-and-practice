@@ -6,6 +6,7 @@
 ## Minor Projects
 
 ### **Guess Flag App** 
+
      - To guess the name of country whose flag generated. 
     - Options provided for help.
     - Angular.js and Bootstrap used.
@@ -17,7 +18,7 @@
 <p align="center">
 <img src='https://user-images.githubusercontent.com/24764528/42089022-49a57022-7bb9-11e8-9de9-d2398c198c0a.png' width='600px'></p>
 
-- **Multiple Todo-List App**
+### **Multiple Todo-List App**
 
     - Angular.js, Boothstrap, Firebase used.
     - special effects using animate.css.
@@ -28,7 +29,7 @@
 <p align="center">
 <img src='https://user-images.githubusercontent.com/24764528/42089035-51e0c3cc-7bb9-11e8-9e84-8c2bac95adb6.png' width='600px'></p>
 
-- **Ionic Templates**
+### **Ionic Templates**
 
     - whatsapp like template.
     - polling app template.
