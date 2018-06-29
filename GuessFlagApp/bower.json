@@ -1,0 +1,23 @@
+{
+  "name": "flag_app",
+  "authors": [
+    "AkankshaShrimal <akankshashrimal141997@gmail.com>"
+  ],
+  "description": "type flag name and get points for correct answer",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.4",
+    "flag-icon-css": "^2.8.0",
+    "bootstrap": "^3.3.7",
+    "animate.css": "^3.5.2"
+  }
+}

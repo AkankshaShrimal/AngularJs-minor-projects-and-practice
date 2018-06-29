@@ -1,0 +1,83 @@
+<html>
+
+<head>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="flag_data.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="bower_components/flag-icon-css/css/flag-icon.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bower_components/animate.css/animate.css">
+
+    <style>
+        .div1 {
+            text-align: center
+        }
+
+        body {
+            background-image: url("flag.jpg")
+        }
+
+        #fabButton {
+            -webkit-animation-delay: .5s;
+            -webkit-animation-duration: 2s;
+            -webkit-animation-iteration-count: 2;
+        }
+
+        .button {
+            background-color: black;
+            border: 2px 2px;
+            border-color: black;
+            color: white;
+            text-align: left;
+            cursor: pointer;
+            width: 200px;
+            -webkit-animation-duration: 2s;
+        }
+
+        .center {
+            position: absolute;
+            margin: auto;
+
+            right: 0;
+
+            left: 0;
+        }
+    </style>
+</head>
+
+<body ng-app="flagApp">
+
+    <div class=" div1 bg-info " ng-controller="flagCtrl as flag" style=" height: 64%;padding: 0;margin: 0;">
+
+
+        <button id="fabButton" class="btn btn-primary btn-lg active animated tada" ng-click="flag.call();"><h3>GET FLAG OF A COUNTRY</h3></button>
+
+
+        <br>
+        <br>
+
+
+        <span class="flag-icon flag-icon-{{flag.alpha}}"></span>
+        <br>
+        <br>
+
+        <b>COUNTRY NAME :</b><input type="text" class="form-control danger" ng-model="flag.nation">
+
+        <br>
+
+        <button ng-if="flag.getFlag" class="btn btn-success btn-lg active animated infinite pulse" ng-click="flag.option();"> OPTIONS </button>
+        <p ng-if="flag.give_options && flag.temp ">
+            <b>    
+             <button class="button animated bounceInLeft" ng-click="flag.putting(flag.option1);">(A) {{flag.option1}}</button> <br>
+             <button class="button animated bounceInRight" ng-click="flag.putting(flag.option2);">(B) {{flag.option2}}</button> <br>
+             <button class="button animated bounceInLeft" ng-click="flag.putting(flag.option3);">(C) {{flag.option3}}</button> <br>
+             <button class="button animated bounceInRight" ng-click="flag.putting(flag.nationName);">(D) {{flag.nationName}}</button> <br>
+             </b></p>
+
+        <p ng-if=" flag.nation && flag.nationName == flag.nation"> <b><button  style ="color:black; border-color:black" class="btn btn-warning btn-md animated bounceInLeft">THIS IS CORRECT </button></b>            </p>
+        <p ng-if=" flag.nation && !(flag.nationName == flag.nation)"> <b> <button  style ="color:black ;border-color:black" class="btn btn-danger btn-md animated bounceInLeft">THIS IS WRONG </button> </b></p>
+    </div>
+
+</body>
+
+</html>
