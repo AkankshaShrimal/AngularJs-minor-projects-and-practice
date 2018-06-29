@@ -2,14 +2,14 @@
  
  Practice on angular.js (javascript framework).
 
+
 ## Minor Projects
 
 - **Guess Flag App** 
-
-        - To guess the name of country whose flag generated. 
-        - options provided for help.
-        - Angular.js and Bootstrap used.
-        - special effects using animate.css.
+     - To guess the name of country whose flag generated. 
+    - Options provided for help.
+    - Angular.js and Bootstrap used.
+    - special effects using animate.css.
         
 <p align="center">
 <img src='https://user-images.githubusercontent.com/24764528/42089019-469bd574-7bb9-11e8-8f56-0545bc302a4f.png' width='600px'></p>
@@ -33,10 +33,10 @@
     - whatsapp like template.
     - polling app template.
 
-
-<img src='https://user-images.githubusercontent.com/24764528/42089039-53fa40a2-7bb9-11e8-999d-68b1b80f52e9.png' width='100px'>
-
-<img src='https://user-images.githubusercontent.com/24764528/42089052-608ff820-7bb9-11e8-8551-b547816bf49f.png' width='100px'>
+<p align="center">
+<img src='https://user-images.githubusercontent.com/24764528/42089039-53fa40a2-7bb9-11e8-999d-68b1b80f52e9.png' width='300px'>
+<img src='https://user-images.githubusercontent.com/24764528/42089052-608ff820-7bb9-11e8-8551-b547816bf49f.png' width='300px'>
+</p>
 
 <p align="center">
 <img src='https://user-images.githubusercontent.com/24764528/42089031-4f689354-7bb9-11e8-8b9e-100790383091.png' width='800px'></p>
