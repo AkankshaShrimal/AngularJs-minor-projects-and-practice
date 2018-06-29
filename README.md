@@ -5,7 +5,7 @@
 
 ## Minor Projects
 
-- **Guess Flag App** 
+### **Guess Flag App** 
      - To guess the name of country whose flag generated. 
     - Options provided for help.
     - Angular.js and Bootstrap used.
