@@ -1,0 +1,17 @@
+<div ng-controller="firstCtrl as first">
+
+  <h1 style="text-align: center;color:white" class="animated infinite pulse"> HOME PAGE</h1>
+  <h4 style="color:white"> WRITE LIST NAME</h4>
+  <input type="text" class="form-control" ng-model="first.name">
+  <button class="btn btn-info" ng-click="first.addname(first.name)">DONE</button>
+  <br>
+  <br>
+  <div ng-repeat="elem in first.lists">
+    <a href="#!/profile/{{elem}}"> {{elem | uppercase}}</a>
+  </div>
+
+
+
+
+
+</div>

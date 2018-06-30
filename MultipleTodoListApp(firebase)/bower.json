@@ -1,0 +1,22 @@
+{
+  "name": "multi_view",
+  "homepage": "https://github.com/abhishekrathore/angularsummer2017",
+  "authors": [
+    "AkankshaShrimal <akankshashrimal141997@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-route": "^1.6.4",
+    "firebase": "^4.1.2",
+    "angularfire": "^2.3.0"
+  }
+}
