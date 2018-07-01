@@ -1,0 +1,21 @@
+{
+  "name": "todo",
+  "authors": [
+    "AkankshaShrimal <akankshashrimal141997@gmail.com>"
+  ],
+  "description": "its a list",
+  "main": "",
+  "license": "MIT",
+  "homepage": "https://github.com/abhishekrathore/angularsummer2017",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.4",
+    "bootstrap": "^3.3.7"
+  }
+}
